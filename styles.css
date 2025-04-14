@@ -1,0 +1,29 @@
+.hi { 
+    color: rgb(61, 186, 193); 
+    font-size: 24px; 
+  }
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+.borader1 {
+    border: 2px solid black;
+    border-radius: 16px;
+}
+h1 {
+    text-align:center;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+img:hover {
+  opacity: 0.7;
+}
+
+.highlight {
+  background-color: rgba(255, 255, 0, 0.864);
+  font-weight: bold;
+}
+
