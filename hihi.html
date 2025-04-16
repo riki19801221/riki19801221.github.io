@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First Webpage</title>
+    <script src="hi.js"></script>
+  </head>
+  <body>
+
+    <h1>Hello, world!</h1>
+    <h2>Riki Hashimoto</h2>
+    <p>Welcome to my first webpage.</p>
+    <p>I am 15 years old.</p>
+    <h1>hobby!</h1>
+    <ul>
+      <li>skateboard</li>
+      <li>hi</li>
+      <li>hihi</li>
+    </ul>
+    <ol>
+      <li>hi</li>
+      <li>hihi</li>
+      <li>hihihi</li>
+    </ol>
+    <dl>
+      <dt>food</dt>
+      <dd>- egg</dd>
+      <dt>juice</dt>
+      <dd>- cola </dd>
+    </dl>
+    <p class="highlight">This is a highlighted paragraph. ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</p>
+    <p class="highlight">hello highlighted text.</p>
+    <br><br> 
+    <a href="https://classroom.google.com/c/NjgxMzg4MDY4Njg3"><img src="cs.png" width="250" height="100">
+    <img src="HAS.jpg" width="200" height="100" >
+    <br><br> 
+    <a href="index.html"><button>view my other website</button></a>
+
+    <a href="hi.html"><button>project 1</button></a>
+
+    <a href="123.html"><button>Science fair</button></a>
+    <br><br> 
+
+    <button onclick="showMessage()">Click Me</button>
+    <button onclick="changeBgColor()">BG to lightBlue</button>
+    <button onclick="changeBgColor2()">BG to yellow</button>
+    <button onclick="changeBgColor3()">Change BG image</button>
+    <button onclick="hi()">reset BG</button>
+    <br><br> 
+    <script>
+      let name = prompt("whats ur age?")
+      if (name >= 16) {
+        alert("Hello! Welcome to my website.");
+      }
+      else {
+        alert("sorry, you cant open this file. Too young")
+        window.location.href = "block.html";
+      }
+
+
+       
+    </script>
+
+
+    <input type="text" id="colorInput" placeholder="enter ur favorite color">
+    <button onclick="changeBgColorUser()">change background</button>
+    <p id="colorInput"></p>
+
+
+    <style>
+
+        
+        a:hover {
+          color: red;
+          text-decoration: underline;
+        }
+        img:hover {
+          opacity: 0.7;
+        }
+
+        .highlight {
+          background-color: rgba(255, 255, 0, 0.864);
+          font-weight: bold;
+        }
+    </style>
+
+    <a href="https://classroom.google.com/c/NjgxMzg4MDY4Njg3">Visit CS classroom!</a>
+  </body>
+</html>
+
+
