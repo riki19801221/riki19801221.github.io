@@ -9,8 +9,67 @@
 .h3 {
     font-size: 14px;
   }
+
   body {
+    margin: 0;
+    height: 100vh;
     background-image:
-    url(bg2.jpg);
+      url('hii.jpg'),  /* bottom layer */
+      url('white3.png');  /* top layer (can be semi-transparent) */
+    background-position: center;
     background-size: cover;
- } 
+    background-repeat: no-repeat;
+  }
+  body, html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .background-layer-1,
+  .background-layer-2 {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .background-layer-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('hii.jpg'); /* pic1 is full-width background */
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    
+  }
+
+  .background-layer-2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px; /* width of the center overlay */
+    height: 100%;
+    background-image: url('white3.png'); /* pic2 is the blocking middle image */
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    opacity: 0.8;
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 50px;
+    color: white;
+  }
+
+
+
